@@ -1,0 +1,20 @@
+> For those who don't know, .nnf is "nNovate File". Just a little tidbit for those who were wondering. <
+
+fore Prgm(!)
+  localvars→("all*")
+  globalval→("all*")
+  > Also, the syntax of the .nnf file format is odd to say the least. Even from the oddest of programming languages, this will seem like hieroglyphics. <
+back endPrgm(!)
+fore Prgm(@)
+  self.main→:doc
+  addEventListener("open", func("open"){
+    clearSys
+    endLine:arm(51*)
+    endLine:BASE(1-100*)
+    sysEnd(line*line:BASE, arm)
+    when("done")
+      pers = true
+    endWhen
+    end@fore
+  })
+back endPrgm(@)
