@@ -1,0 +1,19 @@
+-!- nNovate Basic. Goodness gracious, this is an easy but powerful language. So lucky to have it. Just FYI, I'm telling you this because this uses the Bravo version, which is a more difficult
+---one that is only seen to be able to be coded in via the handheld with the nNovate 3-Xxenon. It is always present on every calculator, so please don't ask how I got
+---this working. -!-
+-!- There are safegaurds againt Balisong, so thats why this is here. This is simply using Basic Bravo to disable those features due to the immense power it has to mess with
+---the assembly programming. Put this in with the same folder as the .nnf and make it a group run. -!-
+
+stPrgm()
+  endASM(line*5)
+  endASM(line*16)
+  ASM:check(5, 16: running?)→*true, false*→a
+  If (a(=)false)
+    endASM(line*5)
+    endASM(line*16)
+    rep unt a(=)true
+  endIf
+  If (a(=)true)
+    udt Prgm(end)
+  endIf
+endPrgmHr
